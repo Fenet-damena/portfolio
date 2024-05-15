@@ -25,7 +25,7 @@
   ::before,::after {
     box-sizing: border-box;
   }
-  .hidden{
+  .hidden{ 
     display: none !important;
   }
   section{
@@ -55,6 +55,7 @@
     font-size: 40px;
     color: var(--text-black-900);
     font-weight: 700;
+    position: relative;
     
   }
   .about-title h2::before{
@@ -77,6 +78,7 @@
     margin-top: 8px;
 
   }
+
   .line{
     display: flex;
     flex-wrap: wrap;
@@ -319,4 +321,35 @@
     text-align: center;
   }
 
+/*About*/
+.my-about .ab-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.my-about .ab-content .ab-text{
+  flex:  0 0 100%;
+  max-width: 100%;
 
+}
+.my-about .ab-content .ab-text  h3{
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--text-black-900);
+}
+.my-about .ab-content .ab-text h3 span{
+  color: var( --skin-color);
+
+}
+.my-about .ab-content.ab-text p{
+  font-size: 16px;
+  line-height: 25px;
+
+
+}
+.my-about .ab-content .personal-info {
+  flex: 0 0 50%;
+  max-width: 100%;
+  background-color: red;
+
+}
