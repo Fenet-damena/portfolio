@@ -98,7 +98,7 @@
     list-style: none;
 
   }
-  .contact-me{
+  .btn{
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -111,7 +111,7 @@
     transition: all 0.3s ease;
     border: none;
   }
-  .contact-me:hover{
+  .btn:hover{
     transform: scale(1.05);
     
 
@@ -354,10 +354,93 @@
   margin-top: 40px;
 
 }
+.my-about .ab-content .personal-info .if-item{
+  flex:0 0 50%;
+  max-width:50%;
+
+}
+.my-about .ab-content .personal-info .if-item  p{
+  font-weight: 600;
+  padding: 10px 0;
+  font: 16px;
+  color: var(--text-black-900);
+  border-bottom: 1px solid var(--big-black-50);
+  
+}
+.my-about .ab-content .personal-info .if-item  p span{
+  font-weight: 400;
+  color:var(--text-black-700);
+  margin-left: 4px;
+  display: inline-block;
+
+}
+.my-about .ab-content .personal-info .buttons{
+  
+  margin-top: 30px;
+}
+.my-about .ab-content .personal-info .buttons .btn{
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
 .my-about .ab-content .skill{
   flex: 0 0 40%;
   max-width: 40%;
- 
   margin-top: 40px;
 
+}
+.my-about .ab-content .skill .skill-item{
+  flex:0 0 100%;
+  max-width: 100%;
+
+}
+.my-about .ab-content .skill .skill-item h5{
+  line-height:40px ;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-black-900);
+  text-transform: capitalize;
+}
+.my-about .ab-content .skill .skill-item .progress{
+  background-color: var(--big-black-50);
+  height: 7px;
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.my-about .ab-content .skill .skill{
+  margin-bottom: 25px;
+
+}
+.my-about .ab-content .skill .skill-item .progress .progress-in {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 4px;
+  background-color: var(--skin-color);
+}
+.my-about .ab-content .skill .skill-item .skill-percent{
+  position: absolute;
+  right: 0;
+  color: var(--text-black-900);
+  top: -40px;
+  font-weight: 400;
+  line-height: 40px;
+
+
+}
+.my-about .ab-content .education,
+.my-about .ab-content .experience{
+  flex:0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+
+}
+.my-about .ab-content h3 .title{
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight:700 ;
+  color: var(--text-black-900);
 }
