@@ -8,7 +8,8 @@
         <!--css files-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="color1.css">
+        <link rel="stylesheet" href="css/color1.css">
+        <link rel="stylesheet" href="css/styleswitcher.css">
     </head>
     <body>
         <!--=====main container Start=====-->
@@ -34,7 +35,7 @@
              <!--=====main content start=====-->
              <div class="all-content">
                 <!--=====Home part start here=====-->
-                <section class="Home-area section hidden">
+                <section class="Home-area section">
                     <div class="container">
                         <div class="line">
                             <div class="line-info padd-15">
@@ -56,7 +57,7 @@
                 
                 <!--=====Home part End here=====-->
                 <!--=====About part start here=====-->
-               <section class="my-about section hidden">
+               <section class="my-about section">
                 <div class="container">
                     <div class="line">
                         <div class="about-title padd-15">
@@ -252,7 +253,7 @@
                </section>
                 <!--=====About part end here=====-->
                  <!--=====service part start here=====-->
-                 <section  class="service section hidden">
+                 <section  class="service section">
                     <div class="container">
                         <div class="line">
                             <div class="section-title padd-15">
@@ -338,7 +339,7 @@
                  </section>
                   <!--=====service part end here=====-->
                   <!--=====portfolio part start here=====-->
-                  <section class="portfolio section hidden">
+                  <section class="portfolio section">
                     <div class="container">
                         <div class="line">
                             <div class="section-title padd-15">
@@ -438,60 +439,37 @@
         <!--contact form start -->
         <div class="line">
             <div class="contact-form padd-15">
-                
-                    <div class="line">
-                        <div class="form-item col-6 padd-15">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Name">
-
-                            </div>
-
+                <div class="line">
+                    <div class="form-item col-6 padd-15">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
                         </div>
-                        <div class="form-item col-6 padd-15">
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email">
-
-                            </div>
-
+                    </div>
+                    <div class="form-item col-6 padd-15">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
                         </div>
-
-                   
-
+                    </div>
                 </div>
                 <div class="line">
                     <div class="form-item col-12 padd-15">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Subject">
-
                         </div>
-
                     </div>
-
-
                 </div>
                 <div class="line">
                     <div class="form-item col-12 padd-15">
                         <div class="form-group">
-                            <textarea name="" id=""  class="" placeholder="Message">
-
-                            </textarea>
-
+                            <textarea name="" class="form-control" placeholder="Message"></textarea>
                         </div>
-
                     </div>
-
-
                 </div>
                 <div class="line">
                     <div class="form-item col-12 padd-15">
-                       <button type="submit" class="btn">Send Message</button>
-
+                        <button type="submit" class="btn">Send Message</button>
                     </div>
-
-
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -507,6 +485,24 @@
         </div>
 
         <!--==============main container End===============-->
+        <!-- ===== style switcher start===== -->
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-skin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas fa-moon"></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="Colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+        <!-- ===== style switcher end===== -->
         <!--javascript filesgot-->
         <script src="main.js">
 
