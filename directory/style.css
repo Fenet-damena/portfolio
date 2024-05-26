@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Clicker+Script&display=swap');:root {
-    --bg-black-900: #f2f2fc;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Clicker+Script&display=swap');
+:root {--bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
     --big-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
+  }
+  body.dark{
+    
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --big-black-50: #393939;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+    
   }
   
   body {
@@ -33,7 +42,15 @@
     min-height: 100vh;
     padding: 0 30px;
     display: block;
-    opacity: 1;}
+    opacity: 1;
+    position: fixed;
+    left: 270px;
+    right:0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
   
     .container{
     max-width: 1100px;
@@ -440,7 +457,7 @@
   margin-top: 30px;
 
 }
-.my-about .ab-content h3 .title{
+.my-about .ab-content h3{
   font-size: 24px;
   margin-bottom: 30px;
   font-weight:700 ;
@@ -506,7 +523,7 @@ background-color: var(--skin-color);
   line-height: 25px;
   font-size: 16px;
   text-align: justify;
-  color: var(--);
+  color: var(--text-black-700);
 }
 @media only screen and (max-width: 768px) {
   .my-about .ab-content .education,
