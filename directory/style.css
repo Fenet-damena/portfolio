@@ -50,6 +50,24 @@
     z-index: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    transition: all 0.3s ease;
+  }
+  .section .back-section{
+    z-index: 1;
+  }
+  .section.active{
+    z-index: 2;
+    opacity: 1;
+    animation: slideSection 1s ease;
+  }
+  
+  @keyframes slideSection {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
   
     .container{
@@ -202,7 +220,7 @@
     
     display: block;
   }
-  .tog {
+  .aside .tog {
     height: 40px;
     width: 45px;
     border: 1px solid var(--big-black-50);
@@ -215,6 +233,7 @@
     align-items: center;
     justify-content: center;
     background: var(--bg-black-100);
+    transition: all 0.3s ease;
   }
   
   .tog span {
@@ -224,7 +243,9 @@
     display: inline-block;
     position: relative;
      }
-  
+  .aside .tog.open span{
+    background-color: transparent;
+  }
   .tog span::before {
     content: '';
     height: 3px;
@@ -234,7 +255,11 @@
     top: -6px;
     left: 0;
   }
-  
+  .aside .tog.open span::before{
+    transform:rotate(45deg) ;
+    top: 0;
+
+  }
   .tog span::after {
     content: '';
     height: 2px;
@@ -243,6 +268,16 @@
     position: absolute;
     top:6px;
     left: 0;
+  }
+  .aside .tog.open span::after{
+    transform:rotate(45deg) ;
+    top: 0;
+
+  }
+  .aside .tog.open span::before{
+    transform:rotate(-45deg) ;
+    top: 0;
+
   }
   .aside .nav li a{
     font-size: 16px;
@@ -360,9 +395,10 @@
   color: var( --skin-color);
 
 }
-.my-about .ab-content.ab-text p{
+.my-about .ab-content .ab-text p{
   font-size: 16px;
   line-height: 25px;
+  color: var(--text-black-900);
 
 
 }
@@ -398,7 +434,7 @@
   margin-top: 30px;
 }
 .my-about .ab-content .personal-info .buttons .btn{
-  margin-right: 15px;
+
   margin-top: 15px;
 }
 
@@ -502,7 +538,7 @@ background-color: var(--skin-color);
   background-color: var(--skin-color);
 
 }
-.my-about .ab-content .timeline .timeline-dete{
+.my-about .ab-content .timeline .timeline-date{
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 12px;
@@ -510,6 +546,7 @@ background-color: var(--skin-color);
 }
 .my-about .ab-content .timeline .timeline-date .fa{
   margin-right: 5px;
+  font-size: 30px;
 
 }
 .my-about .ab-content .timeline .timeline-title{
@@ -694,6 +731,7 @@ section.service{
   width: 100%;
   display: block;
   
+  
 
 }
 /* contact*/
@@ -784,9 +822,27 @@ margin-bottom: 60px;
   .aside{
     left: -270px;
   }
-  .all-content{
-    padding-left: 0;
-  }
+.aside.open{
+  left: 0;
+
+}
+.aside .tog{
+  display: flex;
+  left: 30px;
+
+}
+.aside .tog.open{
+  left: 300px;
+
+}
+
+.section{
+  left: 0;
+}
+.section.open{
+
+  left:270px;
+}
   .my-about .ab-content .personal-info .if-item p span{
     display: block;
     margin-left: 0;
