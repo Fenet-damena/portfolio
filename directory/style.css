@@ -314,14 +314,14 @@
     
   }
   h3.greeting{
-    font-size: 28px;
+    font-size: 34px;
     margin: 15px 0;
 
 
   }
   h3.greeting span{
     font-family: 'Clicker Script',cursive;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     color: var(--skin-color);
 
@@ -329,7 +329,7 @@
 
   }
   h3.profession{
-    font-size: 30px;
+    font-size: 36px;
     margin: 15px 0;
   }
   .my{
@@ -338,6 +338,8 @@
   }
   .line-info p{
     margin-bottom: 70px;
+    
+    font-size: 22px;
   }
   .Home-area.my-home-pic{
     flex:  0 0 40%;
@@ -350,10 +352,10 @@
     position: absolute;
     height: 80px;
     width: 80px;
-    right: 20px;
+    right: 0;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    bottom: -40px;
+    bottom: -100px;
 }
 .my-home-pic::before{
   content: '';
@@ -371,7 +373,7 @@
   .my-home-pic img{
     margin: auto;
     border-radius:5px ;
-    height: 400px;
+    height: 550px;
     text-align: center;
   }
 
@@ -396,11 +398,15 @@
 
 }
 .my-about .ab-content .ab-text p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 25px;
   color: var(--text-black-900);
 
 
+}
+.section {
+  height: 500px; /* or any other fixed height */
+  overflow-y: scroll; /* or overflow-y: auto; */
 }
 .my-about .ab-content .personal-info {
   flex: 0 0 60%;
@@ -417,7 +423,7 @@
 .my-about .ab-content .personal-info .if-item  p{
   font-weight: 600;
   padding: 10px 0;
-  font: 16px;
+  font-size: 22px;
   color: var(--text-black-900);
   border-bottom: 1px solid var(--big-black-50);
   
@@ -452,7 +458,7 @@
 .my-about .ab-content .skill .skill-item h5{
   line-height:40px ;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text-black-900);
   text-transform: capitalize;
 }
@@ -540,7 +546,7 @@ background-color: var(--skin-color);
 }
 .my-about .ab-content .timeline .timeline-date{
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 12px;
   color: var(--text-black-700);
 }
@@ -551,14 +557,15 @@ background-color: var(--skin-color);
 }
 .my-about .ab-content .timeline .timeline-title{
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
+  text-decoration:underline;
   margin-bottom: 15px;
   text-transform: capitalize;
   color: var(--text-black-900);
 }
 .my-about .ab-content .timeline .timeline-text{
   line-height: 25px;
-  font-size: 16px;
+  font-size: 20px;
   text-align: justify;
   color: var(--text-black-700);
 }
@@ -647,11 +654,11 @@ section.service{
     flex:0 0 33.33%;
     max-width: 33.33%;
   }
-  .service .service-item .service-item-inner{
+  .service .service-item {
     background-color: var(--bg-black-100);
     border: 1px solid var(--big-black-50);
     border-radius: 10px;
-    padding: 20px  15px ;
+    padding: 20px 25px;
     text-align: center;
     transition: all 0.35 ease;
   }
@@ -679,34 +686,29 @@ section.service{
 }
 .service .service-item .service-item-inner:hover .icon .fa{
   font-size: 25;
-  color:#ffffff ;
+  color:#ffffff;
 }
 .service .service-item .service-item-inner h4{
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 15px;
   color: var(--text-black-900);
   font-weight: 700;
   text-transform: capitalize;
 }
 .service .service-item .service-item-inner p{
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text-black-700);
   line-height: 25px;
-
 }
 /*portifolio*/
 .portfolio .container{
   padding-bottom: 40px;
-
-
-
 }
 
 .portfolio .portfolio-heading {
   flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 40px;
-
 }
 .portfolio .portfolio-heading h2{
   color: var(--text-black-900);
@@ -775,6 +777,7 @@ margin-bottom: 60px;
   color: var(--text-black-700);
   font-weight: 400;
 }
+.contact form,
 .contact .contact-form {
   flex: 0 0 100%;
   max-width: 100%;
@@ -794,7 +797,7 @@ margin-bottom: 60px;
   margin-bottom: 30px;
 }
 
-.contact .contact-form .form-item .form-control {
+.contact .contact-form .form-item .form-control{
   width: 100%;
   height: 50px;
   border-radius: 25px;
@@ -819,6 +822,10 @@ margin-bottom: 60px;
   padding: 0 50px;
 }
 @media (max-width:1199px){
+  
+  .section .container{
+    padding-top:70px ;
+  }
   .aside{
     left: -270px;
   }
