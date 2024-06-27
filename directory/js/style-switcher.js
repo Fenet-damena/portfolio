@@ -15,14 +15,14 @@ function setActiveStyle(color) {
   alternateStyle.forEach((style) => {
     if (color === style.getAttribute("title")) {
       style.removeAttribute("disabled");
-      style.disabled = false; // Enable the style
+      style.disabled = false; 
     } else {
       style.setAttribute("disabled", "true");
-      style.disabled = true; // Disable the style
+      style.disabled = true; 
     }
   });
 
-  // Save the selected style color to local storage
+ 
   localStorage.setItem("selectedColor", color);
 }
 
