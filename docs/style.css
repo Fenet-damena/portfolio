@@ -895,3 +895,17 @@ margin-bottom: 60px;
 
 
 }
+.con {
+  display: inline-block;
+}
+
+.icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 50px;
+
+  cursor: pointer;
+}
