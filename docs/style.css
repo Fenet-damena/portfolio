@@ -382,7 +382,9 @@
 .my-about .ab-content {
   flex: 0 0 100%;
   max-width: 100%;
+
 }
+
 .my-about .ab-content .ab-text{
   flex:  0 0 100%;
   max-width: 100%;
